@@ -17,13 +17,101 @@ Select ONE Additional Feature to Add
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Unit 2 Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel to Jamaica</title>
         <style>
+            /*Element selectors */
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                animation: bgColor 10s infinite;
+                color:rgb(255, 255, 255);
+            }
+            h1{
+                text-align: center;
+                color: white;
+                padding: 20px
+            }
             
+            /* ID selectors */
+            #header{
+                padding: 10px 0;
+                background-color: black;
+            }
+
+            #footer{
+                background-color: black;
+                padding: 15px;
+                color: white;
+                text-align: center;
+            }
+
+            /* Class Selectors */
+            .image-container{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: 20px 0;
+            }
+            .highlight {
+                border: 5px solid yellow;
+                padding: 5px;
+                border-radius: 10px;
+            }
+            
+            /* Images styling */
+            img{
+                max-width: 300px;
+                margin: 10px;
+                border-radius: 15px;
+            }
+
+            /* Animated background colors */
+            @keyframes bgColor{
+                0% {background-color: black;}
+                33% {background-color: green;}
+                66% {background-color: yellow;}
+                100% {background-color: black;}
+            }
+
+        
         </style>
     </head>
     <body>
+        <div id="header">
+            <h1>Welcome to Jamaica!</h1>
+        </div>
+
+        <p style="text-align: center;
+         font-size: 18px; 
+         color:white">
+         
+        Plan your dream vacation to the beautiful island of Jamaica. Explore beaches, mountains, and amazing culture!
+         </p>
+         <div class="image-container">
+            <img src= "https://images.trvl-media.com/media/content/shared/images/travelguides/destination/180106/Doctors-Cave-Beach-60362.jpg" alt="Doctors Cave Beach" class="highlight">
+
+            <h1>Fun fact: Doctors Cave Beach can be found on the $50 banknote!</h1>
+            <img src= "https://deih43ym53wif.cloudfront.net/blue-mountains-jamaica-shutterstock_789935377_cc7e49ab64.jpeg" alt="The Blue Mountains" class="highlight">
+            <img src= "https://www.sandals.com/blog/content/images/2021/07/Jamaica-around-Carnival-1.jpg" alt="Carnival in Jamaica" class="highlight">
+            <img src= "https://www.diningandcooking.com/wp-content/uploads/2023/02/i2i4gabc9qga1-scaled.jpg" alt="Oxtail with Rice and Peas" class="highlight">
+            <img src= "https://originalflava.com/wp-content/uploads/2014/05/Ackee-saltfish.jpg" alt="Ackee and Saltfish with Fried Dumpling" class="highlight">
+    
+         </div>
+
+         <p style="text-align: center;">
+            Don't miss local food and festivals!
+         </p> 
+
+
+
+
+         <div id="footer">
+            Symphony Smith, Period 6
+         </div>
+         
 
         
     </body>
 </html>
+
